@@ -33,8 +33,9 @@
 #include "proxyrandom.h"
 #include "mhdoor.h"
 
-MHModel::MHModel(uint8_t numberOfDoors) :
-  _numberOfDoors(numberOfDoors)
+MHModel::MHModel( uint8_t numberOfDoors, bool verbose ) :
+  _numberOfDoors(numberOfDoors),
+  _verbose(verbose)
 {
   if (numberOfDoors < 3) {
     // Cannot play with less than 3 doors
@@ -129,6 +130,9 @@ std::vector< int > MHModel::getAvailableDoors (int exclude1, int exclude2)
 
 void MHModel::gameLog(const std::string actor, const std::string action, int doorNumber) const
 {
-  return;
+  if (_verbose == false) {
+    return;
+  }
+  
   std::cout << actor << " " << action << " number " << doorNumber << std::endl;
 }

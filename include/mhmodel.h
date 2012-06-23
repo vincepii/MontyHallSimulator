@@ -63,12 +63,17 @@ class MHModel
    */
   int _carDoorIndex;
   
+  /**
+   * Verbose mode
+   */
+  bool _verbose;
+  
 public:
   
   /**
    * Default constructor
    */
-  MHModel(uint8_t numberOfDoors = 3);
+  MHModel(uint8_t numberOfDoors = 3, bool verbose = false);
   
   MHResult theGame();
   

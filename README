@@ -8,12 +8,16 @@ http://en.wikipedia.org/wiki/Monty_Hall_problem
 The program is much more an emulator than a simulator as it performs additional
 steps which wouldn't be necessary for the purpose of gathering statistics.
 
+The original Monty Hall game supports three doors.
+This simulator supports an arbitrary number of doors, but not inferior to three.
+
 ## INSTALLATION
 No installation is required to run the simulator.
 Just compile and execute it.
 
 Prerequsites:
     cmake
+    libboost-program-options1.46-dev
 
 Compilation instructions (from the MontyHallSimulator directory):
     mkdir build
@@ -21,6 +25,6 @@ Compilation instructions (from the MontyHallSimulator directory):
     cmake ..
     make
 
-Execution:
+Execution (from the build directory):
     ./montyhallsimulator
 
