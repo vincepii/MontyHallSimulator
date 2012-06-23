@@ -1,0 +1,25 @@
+## INFORMATION
+
+This program simulates the popular Monty Hall game.
+
+For information about the game, go to the wikipedia page: 
+http://en.wikipedia.org/wiki/Monty_Hall_problem
+
+The program is much more an emulator than a simulator as it performs additional
+steps which wouldn't be necessary for the purpose of gathering statistics.
+
+## INSTALLATION
+No installation is required to run the simulator.
+Just compile and execute it.
+
+Prerequsites:
+    cmake
+
+Compilation instructions (from the MontyHallSimulator directory):
+    cd build
+    cmake ..
+    make
+
+Execution:
+    ./montyhallsimulator
+
