@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
       ("help", "Help message")
       ("doors", po::value<int>(&doors)->default_value(3), "Number of doors (default: 3)")
       ("cycles", po::value<int>(&cycles)->default_value(1), "Number of runs of the game (default: 1)")
-      ("verbose", "Verbose mode, prints player and host actions");
+      ("verbose", "Verbose mode, prints player and host actions (default: false)");
       
     po::variables_map vm;
     po::store(po::parse_command_line(argc, argv, desc), vm);

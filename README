@@ -1,4 +1,4 @@
-## INFORMATION
+## INFORMATION ##
 
 This program simulates the popular Monty Hall game.
 
@@ -11,7 +11,10 @@ steps which wouldn't be necessary for the purpose of gathering statistics.
 The original Monty Hall game supports three doors.
 This simulator supports an arbitrary number of doors, but not inferior to three.
 
-## INSTALLATION
+
+
+## INSTALLATION ##
+
 No installation is required to run the simulator.
 Just compile and execute it.
 
@@ -28,3 +31,24 @@ Compilation instructions (from the MontyHallSimulator directory):
 Execution (from the build directory):
     ./montyhallsimulator
 
+    
+    
+## USAGE ##
+
+./montyhallsimulator --help
+Program options:
+  --help                Help message
+  --doors arg (=3)      Number of doors (default: 3)
+  --cycles arg (=1)     Number of runs of the game (default: 1)
+  --verbose             Verbose mode, prints player and host actions
+  
+  
+  
+## EXAMPLE ##
+
+./montyhallsimulator --cycles 10000000
+Number of games (total): 10000000
+Number of times the player changed doors: 4996098
+Games result (WON/TOTAL): 4996191/10000000 (49.9619%)
+Winning rate when changing door: 3329267/4996098 (66.6373%)
+Winning rate when NOT changing door: 1666924/5003902 (33.3125%)
