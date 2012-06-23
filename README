@@ -16,6 +16,7 @@ Prerequsites:
     cmake
 
 Compilation instructions (from the MontyHallSimulator directory):
+    mkdir build
     cd build
     cmake ..
     make
