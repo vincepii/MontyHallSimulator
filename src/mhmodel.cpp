@@ -98,6 +98,11 @@ MHResult MHModel::theGame()
   }
 }
 
+MHModel::~MHModel()
+{
+  delete ProxyRandom::get();
+}
+
 int MHModel::openOneGoatDoor(int playerChoice)
 {
   return openAnotherDoor(playerChoice, _carDoorIndex);

@@ -5,6 +5,9 @@ This program simulates the popular Monty Hall game.
 For information about the game, go to the wikipedia page: 
 http://en.wikipedia.org/wiki/Monty_Hall_problem
 
+For information about the program visit my blog page:
+http://thealarmclocksixam.wordpress.com/2012/06/23/c-simulator-for-the-monthy-hall-game/
+
 The program is much more an emulator than a simulator as it performs additional
 steps which wouldn't be necessary for the purpose of gathering statistics.
 

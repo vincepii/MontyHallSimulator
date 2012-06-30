@@ -77,6 +77,11 @@ public:
   
   MHResult theGame();
   
+  /**
+   * Destructor
+   */
+  ~MHModel();
+  
 private:
   
   /**
